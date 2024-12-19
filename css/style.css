@@ -463,7 +463,7 @@ pre {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1000px; } }
 
 .container-fluid {
   width: 100%;
@@ -8450,7 +8450,7 @@ h1, h2, h3, h4, h5,
         background: #000000;
         opacity: 0; }
       .owl-carousel.home-slider .slider-item .slider-text {
-        height: 750px;
+        height: 550px;
         z-index: 0; }
         @media (max-width: 991.98px) {
           .owl-carousel.home-slider .slider-item .slider-text {
@@ -8464,6 +8464,8 @@ h1, h2, h3, h4, h5,
             top: 0;
             bottom: 0;
             left: 0;
+            width: 150px;
+            height: 150px;
             right: 0;
             background: #000000;
             opacity: 0; }
@@ -8488,7 +8490,7 @@ h1, h2, h3, h4, h5,
               left: 0;
               bottom: 0;
               right: 0;
-              width: 1200px;
+              width: 100%;
               margin: 0 auto; } }
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text .one-forth {
@@ -8512,8 +8514,8 @@ h1, h2, h3, h4, h5,
                 transform: translateY(-50%);
                 right: 0;
                 max-width: 50%;
-                padding-left: 45px;
-                padding-right: 3em; } }
+                padding-left: 95px;
+             } }
         .owl-carousel.home-slider .slider-item .slider-text .subheading {
           color: #000000;
           font-weight: 600;
@@ -9682,3 +9684,23 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+/* Image styling */
+.owl-carousel.home-slider .slider-item .slider-text .one-third {
+  width: 350px !important;    /* Set width to 200px */
+  height: 350px !important;  
+  border: 4px double #ffbd39 !important;     /* Set height to 200px */
+  border-radius: 50% !important;  /* Make it rounded */
+ 
+}
+@media (max-width: 991px) {
+  .owl-carousel.home-slider .slider-item .slider-text .one-third {
+    display: none !important; /* Hide the image */
+  }
+
+  /* Adjust text and other elements to fill the space */
+  .owl-carousel.home-slider .slider-item .slider-text .one-forth {
+    width: 100% !important; /* Ensure the text container takes the full width */
+  }
+}
+
+/* You can remove any conflicting classes or styles that were already applied for the image in your original code */
